@@ -26,4 +26,4 @@ end = time.time()
 
 # total time for program execution
 print(f"Execution time: {end - start} ")   
-# Execution time: 1.5020370483398438e-05
+# Execution time: 0.00016927719116210938 
