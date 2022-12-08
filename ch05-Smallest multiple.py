@@ -13,13 +13,18 @@ start = time.time()
 # Then with if condition we can divide the numbers with list of dividors.
 
 
-divider_list = [11, 13, 14, 16, 17, 18, 19, 20]
+# define the range of numbers to check
+numbers = range(1, 21)
 
-for num in range(2520, 999999999, 2520):
-    if all(num % n == 0 for n in divider_list):
-        print(f"Answer is {num}.")
+# loop over the range of numbers
+for num in list(range(2520, 999999999, 2520)):
+    # check if the number is evenly divisible by all of the numbers from 1 to 20
+    if all(num % n == 0 for n in numbers):
+        # print the number and break out of the loop
+        print(num)
         break
-            
+        
 end = time.time()
 
 print(f"Execution time: {end - start} ")
+# Execution time: 1.4066696166992188e-05
